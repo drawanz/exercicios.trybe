@@ -1,4 +1,4 @@
-const salarioBruto = 1500.10
+const salarioBruto = 3150.10
 let salarioDescontadoINSS;
 let salarioLiquido;
 
