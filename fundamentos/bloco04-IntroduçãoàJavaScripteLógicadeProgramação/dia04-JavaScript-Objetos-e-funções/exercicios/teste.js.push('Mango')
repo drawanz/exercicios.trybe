@@ -1,0 +1,19 @@
+fruits.push('Mango')
+// ["Strawberry", "Banana", "Mango"]
+
+let pos = fruits.indexOf('Banana')
+// 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
