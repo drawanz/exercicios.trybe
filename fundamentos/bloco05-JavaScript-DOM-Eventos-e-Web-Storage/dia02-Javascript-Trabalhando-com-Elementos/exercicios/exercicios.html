@@ -82,15 +82,44 @@
         secao3.className = "right-content";
         mainPrincipal.appendChild(secao3);
 
-        let src = document.getElementById(secao2);
         let imagem = document.createElement("img");
-        image.src = "https://picsum.photos/200";
-        
-        src.appendChild(imagem);
+        imagem.src = 'https://picsum.photos/200';
+        secao2.appendChild(imagem);
 
-        // imagem.setAttribute('src', 'https://picsum.photos/200');
-        //image.className = "small-image";
-        //secao2.appendChild(imagem);
+        let lista = document.createElement("ul");
+        secao3.appendChild(lista);
+
+        for (let index = 0; index <= 10; index += 1){
+        let listaComponentes = document.createElement("li");
+        let listaItem = index;
+        listaComponentes.innerText = listaItem;
+        lista.appendChild(listaComponentes);
+        }
+
+        for (let index = 0; index <= 2; index += 1){
+        let newTagH3 = document.createElement("h3");
+        newTagH3.className = "description"
+        mainPrincipal.appendChild(newTagH3);
+        }
+        /* let tagH3one = document.createElement("h3");
+        mainPrincipal.appendChild(tagH3one);
+        let tagH3two = document.createElement("h3");
+        mainPrincipal.appendChild(tagH3two);
+        let tagH3tree = document.createElement("h3");
+        mainPrincipal.appendChild(tagH3tree); */ 
+
+        titulo.className = "title";
+
+        mainPrincipal.removeChild(secao2);
+
+       // secao3.style.marginRight = "auto";
+       let styleSecao3 = document.querySelectorAll(".right-content")[0];
+       styleSecao3.style.marginRight = "auto"; 
+
+       //let elementoFilho = document.getElementsByClassName("center-content")[0];
+       //console.log(elementoFilho.parentNode)
+       let elementoPai = document.querySelectorAll(".main-content")[0];
+       elementoPai.style.backgroundColor = "green";
 
 
     </script>
