@@ -48,10 +48,28 @@ function createDaysOfTheWeek() {
   friday4.className = "friday";
 
 // exercício 2
+window.onload = function (feriados) {
 let button = document.createElement("button");
 button.innerHTML = "Feriados";
-let buttonContainer = document.getElementsByClassName("buttons-container");
-buttonContainer.appendChild(button);
+button.className = "btn-holiday";
+let tagPai = document.getElementsByClassName("buttons-container")[0];
+tagPai.appendChild(button);
+
+// exercicio 3
+button.addEventListener('click', function (event){
+  let clickButton = document.querySelector("#btn-holiday");
+  console.log(clickButton);
+  let corDeFundo = document.getElementsByClassName("holiday");
+  
+  
+ 
+   if (corDeFundo === "purple"){
+    for (let i =0; i < corDeFundo.length; i +=1){
+      corDeFundo[i].style.backgroundColor = "rgb(238,238,238)";
+      }
+  }
+})
+};
 
 
 
