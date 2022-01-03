@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <h4>Dados pessoais.</h4>
+            <label for="">Nome: 
+                <input type="text" name="nomeUser" maxlength="40" required>
+            </label>
+            <br>
+            <br>
+
+            <label for="">E-mail: 
+                <input type="email" name="emailUser" maxlength="50" required>
+            </label>
+            <br>
+            <br>
+
+            <label for="">CPF:
+                <input type="text" name="cpfUser" maxlength="11" required>
+            </label>
+            <br>
+            <br>
+
+            <label for="">Endereço:
+                <input type="text" name="enderecoUser" maxlength="200" required >
+            </label>
+            <br>
+            <br>
+
+            <label for="Apartamento">
+                <input type="radio" id="Apartamento" maxlength="200" required >Apartamento
+            </label>
+            <label for="casa">
+                <input type="radio" id="casa" maxlength="200" required >Casa
+            </label>
+            <br>
+            <br>
+
+            <label for="">Cidade:
+                <input type="text" name="cidadeUser" maxlength="28" required>
+            </label>
+            <br>
+            <br>
+
+            <label for="estadoUser" id="label-estado">Estado:
+                <select name="estadoUser" id="estado" required></select>
+            </label>
+            <br>           
+        </fieldset>
+        <br>
+        <fieldset>
+            <h4>Experiência profissional.</h4>
+            <label for="">Resumo do currículo:
+            </label>
+            <br>
+            <textarea name="" id="" cols="30" rows="10" maxlength="1000" required></textarea>
+            <br>
+            <br>
+
+            <label for="">Cargo:
+                <input type="text" maxlength="40" required>
+            </label>
+            <br>
+            <br>
+
+            <label for="">Descrição do cargo:</label>
+            <br>
+            <textarea name="" id="" cols="30" rows="10" maxlength="500" required></textarea>
+            <br>
+            <br>
+
+            <label for="">Data de início:
+                <input type="date" required>
+            </label>
+
+        </fieldset>
+        <br>
+        <button type="submit" id="botao">Enviar currículo</button>
+    </form>
+    <br>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
