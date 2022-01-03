@@ -1,5 +1,3 @@
-window.onload{
-    function () {
-    let label1 = document.createElement("label");
-}
+window.onload = function () {
+    let redLabel = document.getElementById("redLabel").value;
 }
