@@ -1,8 +1,8 @@
-let estado = document.getElementById('estado');
-let botaoEnviar = document.getElementById('botao');
+let estado = document.getElementById('state');
+let botaoEnviar = document.getElementById('button');
 let arrayEstados = ["Acre", "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará","Distrito Federal", "Espírito Santo", "Goiás", "Maranhão", "Mato Grosso", "Mato Grosso do Sul", "Minas Gerais", "Pará", "Paraíba", "Paraná", "Pernambuco", "Piauí", "Rio de Janeiro", "Rio Grande do Norte", "Rio Grande do Sul", "Rondônia", "Roraima", "Santa Catarina", "São Paulo", "Sergipe", "Tocantins"]
 
-function criandoEstados(){
+function creatingStates(){
     for(let i =0; i < 25; i +=1){
         let opcoesEstados = document.createElement('option')
         estado.appendChild(opcoesEstados)
@@ -10,10 +10,15 @@ function criandoEstados(){
     }
 }
 
+function validatingName() {
+    let name = document.querySelector('#name-user')
+    
+}
+
 function preventDef (event){
     event.preventDefault();
-    console.log('enviado');
+    validatingName();
 }
 
 botaoEnviar.addEventListener('click', preventDef)
-criandoEstados();
+creatingStates();

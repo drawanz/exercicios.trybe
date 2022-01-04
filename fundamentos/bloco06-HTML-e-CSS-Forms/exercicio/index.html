@@ -7,73 +7,81 @@
     <title>Exercício</title>
 </head>
 <body>
-    <form action="">
+    <form action="" method="get">
+        <header>
+            <h1>Formulário para cadastro</h1>
+            <p>Preencha os campos a baixo:</p>
+        </header>
         <fieldset>
             <h4>Dados pessoais.</h4>
-            <label for="">Nome: 
-                <input type="text" name="nomeUser" maxlength="40" required>
-            </label>
+            <div>
+                <label for="name-user">Nome: </label>
+                <input type="text" name="name-user" id="name-user" maxlength="40" required>
+            </div>
             <br>
-            <br>
-
-            <label for="">E-mail: 
-                <input type="email" name="emailUser" maxlength="50" required>
-            </label>
-            <br>
-            <br>
-
-            <label for="">CPF:
-                <input type="text" name="cpfUser" maxlength="11" required>
-            </label>
-            <br>
+            
+            <div>           
+                <label for="email-user">E-mail: </label>
+                <input type="email" name="email-user" id="email-user" maxlength="50" required>
+            </div>
             <br>
 
-            <label for="">Endereço:
-                <input type="text" name="enderecoUser" maxlength="200" required >
-            </label>
-            <br>
-            <br>
-
-            <label for="Apartamento">
-                <input type="radio" id="Apartamento" maxlength="200" required >Apartamento
-            </label>
-            <label for="casa">
-                <input type="radio" id="casa" maxlength="200" required >Casa
-            </label>
-            <br>
+            <div>
+                <label for="cpf-user">CPF:</label>
+                <input type="text" name="cpf-user" id="cpf-user" maxlength="11" required>
+            </div>
             <br>
 
-            <label for="">Cidade:
-                <input type="text" name="cidadeUser" maxlength="28" required>
-            </label>
-            <br>
+            <div>
+                <label for="street-user">Endereço:</label>
+                <input type="text" name="street-user" maxlength="200" required >
+            </div>
             <br>
 
-            <label for="estadoUser" id="label-estado">Estado:
-                <select name="estadoUser" id="estado" required></select>
-            </label>
-            <br>           
+            <div>
+                <input type="radio" name="house" id="apartament" maxlength="200" required >
+                <label for="apartament">Apartamento</label>
+                
+                <input type="radio" name="house" id="house" maxlength="200" required >
+                <label for="house">Casa</label>
+            </div>
+            <br>
+
+            <div>
+                <label for="city-user">Cidade:</label>
+                <input type="text" name="city-user" maxlength="28" required>
+            </div>
+            <br>
+
+            <div>
+            <label for="state-user">Estado:</label>
+                <select name="state-user" id="state" required></select>            
+            </div>         
         </fieldset>
+        
         <br>
+        
         <fieldset>
             <h4>Experiência profissional.</h4>
-            <label for="">Resumo do currículo:
-            </label>
+
+            <div>
+            <label for="resume">Resumo do currículo:</label>
             <br>
-            <textarea name="" id="" cols="30" rows="10" maxlength="1000" required></textarea>
-            <br>
+            <textarea name="resume" id="resume" cols="30" rows="10" maxlength="1000" required></textarea>
+            </div>
             <br>
 
-            <label for="">Cargo:
-                <input type="text" maxlength="40" required>
-            </label>
-            <br>
+            <div>
+            <label for="job">Cargo:</label>
+                <input type="text" name="job" id="job" maxlength="40" required>            
+            </div>
             <br>
 
-            <label for="">Descrição do cargo:</label>
+            <div>
+            <label for="job-description">Descrição do cargo:</label>
             <br>
-            <textarea name="" id="" cols="30" rows="10" maxlength="500" required></textarea>
-            <br>
+            <textarea name="" id="job-description" name="job-description" cols="30" rows="10" maxlength="500" required></textarea>
+            </div>
             <br>
 
             <label for="">Data de início:
@@ -82,7 +90,7 @@
 
         </fieldset>
         <br>
-        <button type="submit" id="botao">Enviar currículo</button>
+        <button type="submit" id="button">Enviar currículo</button>
     </form>
     <br>
 
