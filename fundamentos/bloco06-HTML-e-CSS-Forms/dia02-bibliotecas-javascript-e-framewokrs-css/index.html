@@ -3,98 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>  
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+
     <title>Exercício</title>
 </head>
 <body>
-    <form action="" method="get">
-        <header>
-            <h1>Formulário para cadastro</h1>
-            <p>Preencha os campos a baixo:</p>
+    <form class="font-monospace text-center" action="" method="get">
+        <header class="container">
+            <h1 class="display-1">Formulário para cadastro</h1>
         </header>
-        <fieldset>
-            <h4>Dados pessoais.</h4>
-            <div>
-                <label for="name-user">Nome: </label>
-                <input type="text" name="name-user" id="name-user" maxlength="40" required>
+        
+        <h4 class="display-6 ">Dados pessoais</h4>
+            <div class="mb-3 container">
+                <label class="form-label lead" for="name-user">Nome: </label>
+                <input class="form-control" type="text" name="name-user" id="name-user" maxlength="40" required>
             </div>
-            <br>
             
-            <div>           
-                <label for="email-user">E-mail: </label>
-                <input type="email" name="email-user" id="email-user" maxlength="50" required>
+            
+            <div class="mb-3 container">           
+                <label class="fform-label lead" for="email-user">E-mail: </label>
+                <input class="form-control" type="email" name="email-user" id="email-user" maxlength="50" required>
             </div>
-            <br>
+            
 
-            <div>
-                <label for="cpf-user">CPF:</label>
-                <input type="text" name="cpf-user" id="cpf-user" maxlength="11" required>
+            <div class="mb-3 container">
+                <label class="form-label lead" for="cpf-user">CPF:</label>
+                <input class="form-control" type="text" name="cpf-user" id="cpf-user" maxlength="11" required>
             </div>
-            <br>
+            
 
-            <div>
-                <label for="street-user">Endereço:</label>
-                <input type="text" name="street-user" maxlength="200" required >
+            <div class="mb-3 container">
+                <label class="form-label lead" for="street-user">Endereço:</label>
+                <input class="form-control" type="text" name="street-user" maxlength="200" required >
             </div>
-            <br>
+            
 
-            <div>
+            <div class="mb-3 container">
                 <input type="radio" name="house" id="apartament" maxlength="200" required >
-                <label for="apartament">Apartamento</label>
-                
+                <label class="=form-label lead" for="apartament">Apartamento</label>
+            </div>
+            
+            <div class="mb-3 container">
                 <input type="radio" name="house" id="house" maxlength="200" required >
-                <label for="house">Casa</label>
+                <label class="form-label lead" for="house">Casa</label>
             </div>
-            <br>
+            
 
-            <div>
-                <label for="city-user">Cidade:</label>
-                <input type="text" name="city-user" maxlength="28" required>
+            <div class="mb-3 container">
+                <label class="= form-label lead" for="city-user">Cidade:</label>
+                <input class="form-control" type="text" name="city-user" maxlength="28" required>
             </div>
-            <br>
+            
 
-            <div>
-            <label for="state-user">Estado:</label>
-                <select name="state-user" id="state" required></select>            
-            </div>         
-        </fieldset>
+            <div class="mb-3 container">
+            <label class="=form-label lead" for="state-user">Estado:</label>
+                <select class="form-select" name="state-user" id="state" required></select>            
+            </div>              
         
-        <br>
+            <h4 class="display-6">Experiência profissional</h4>
+
+            <div class="mb-3 container">     
+                <label class="=form-label lead" for="resume">Resumo do currículo:</label>     
+                <textarea class="form-control" name="resume" id="resume" cols="30" rows="10" maxlength="1000" required></textarea>            
+            </div>
+            
+
+            <div class="mb-3 container">
+            <label class="=form-label lead " for="job">Cargo:</label>
+                <input class="form-control"  type="text" name="job" id="job" maxlength="40" required>            
+            </div>
+            
+
+            <div class="mb-3 container">
+                <label class="form-label lead" for="job-description">Descrição do cargo:</label>            
+                <textarea class="form-control"  name="" id="job-description" name="job-description" cols="30" rows="10" maxlength="500" required></textarea>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label" for="">Data de início:
+                    <input class="form-control"  type="date" required>
+                </label>
+            </div>
+
+        <div class="mb-3">
+            <button type="submit" id="button">Enviar currículo</button>
+        </div>  
         
-        <fieldset>
-            <h4>Experiência profissional.</h4>
 
-            <div>
-            <label for="resume">Resumo do currículo:</label>
-            <br>
-            <textarea name="resume" id="resume" cols="30" rows="10" maxlength="1000" required></textarea>
-            </div>
-            <br>
-
-            <div>
-            <label for="job">Cargo:</label>
-                <input type="text" name="job" id="job" maxlength="40" required>            
-            </div>
-            <br>
-
-            <div>
-            <label for="job-description">Descrição do cargo:</label>
-            <br>
-            <textarea name="" id="job-description" name="job-description" cols="30" rows="10" maxlength="500" required></textarea>
-            </div>
-            <br>
-
-            <label for="">Data de início:
-                <input type="date" required>
-            </label>
-
-        </fieldset>
-        <br>
-        <button type="submit" id="button">Enviar currículo</button>
+        <script src="script.js"></script>
     </form>
-    <br>
 
     
-    <script src="script.js"></script>
+
 </body>
 </html>
