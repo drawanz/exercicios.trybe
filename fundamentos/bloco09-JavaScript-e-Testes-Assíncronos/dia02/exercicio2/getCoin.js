@@ -5,11 +5,14 @@ const fetchCoins = async () => {
   try {
     const response = await fetch(url);
     const obj = await response.json();
-      console.log(obj);
+    return obj;
   } catch (error) {
     console.log("deu merda");
   }
 }
+await fetchCoins()
 
-window.onload = () => fetchCoins();
-
+window.onload = () => {
+  // console.log(await fetchCoins());
+  // teste();
+}  
