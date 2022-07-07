@@ -36,3 +36,36 @@ describe('Insere um novo filme no BD', () => {
 
   });
 });
+
+describe('busca por um filme', async () => {
+  const payloadMovie = {
+    title: 'Example Movie',
+    directedBy: 'Jane Dow',
+    releaseYear: 1999,
+    id: 1,
+  };
+
+  const id = 1;
+
+  // const find = async (id) => payloadMovie
+
+  before(async () => {
+    sinon.stub(connection, 'execute');
+  });
+
+  after(async () => {
+    connection.execute.restore();
+  });
+
+  describe('quando é encontrado com sucesso', async () => {
+    it('retorna um objeto', async () => {
+      const response = await MoviesModel.find(id);
+
+      expect(response).to.be.a('object');
+    });
+  });
+})
+
+kkkkkkkkkkk
+nada ahwduhawudhuawd
+oow vamo pro zoom, depois a gente ve aqui
