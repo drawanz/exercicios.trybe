@@ -6,13 +6,16 @@ export default class Teacher extends Person implements IEmployee {
   private _subject: Subject;
   private _salary: number;
   private _registration: number;
-  private _admissonDate: Date = new Date();
+  private _admissonDate: Date;
 
   constructor(name: string, birthDate: Date, subject: Subject, salary: number) {
     super(name, birthDate);
     this._registration = this.generateRegistration();
+    this._admissonDate = new Date();
     this._salary = salary;
     this._subject = subject;
+    console.log(this);
+    
   }
 
   generateRegistration() {
