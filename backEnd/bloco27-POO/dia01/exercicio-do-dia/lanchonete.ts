@@ -110,3 +110,13 @@ console.log(ordering.totalWithDiscount());
 // class OrderClient extends Client {
 //   private _payment: string;
 // }
+
+class Animal {
+  constructor(protected birthDate: number) { }
+}
+class Bird extends Animal {
+  constructor(public name: string) { super(2) } // ERRO: constructor deve respeitar o contrato da superclasse
+}
+
+const teste = new Animal(12);
+const teste2 = new Bird('teste')
